@@ -1,15 +1,15 @@
-# CI de nível 01 - Disparo manual a partir de 1 clique
+# CI de nível 02 - Disparo agendado
 
 # Nome do nosso 'pipeline'
-name: 'Execução Manual'
+name: 'Execução Agendada'
 
 # Regras de disparo (gatilhos/triggers)
 # Gatilho de execução manual = workflow_dispatch
 
 on:
   schedule:
-    -  cron: '0 6 * * 1'
-    
+    - cron: '0 6 * * 1'
+
 # Trabalhos/tarefas dentro do pipeline = jobs
 jobs:
   e2e-tests:

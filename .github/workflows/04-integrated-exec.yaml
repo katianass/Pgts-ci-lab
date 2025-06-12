@@ -84,4 +84,4 @@ jobs:
 
     steps:
       - name: Simulação de deploy
-        run: echo "simulando deploy com sucesso"
+        run: echo "simulando deploy com sucesso" 
